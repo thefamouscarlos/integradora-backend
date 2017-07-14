@@ -1,0 +1,79 @@
+/*SUCESS PAGE */
+.sucess
+  height: 90vh
+
+  .container
+    margin-top: 10vh
+    box-shadow: 0 0 20px rgba(0,0,0,.3)
+  h1
+    margin-top: 10%
+    font-family: 'Bitter', Serif
+    font-size: 38px
+    font-weight: 700
+
+  h2
+    font-family: 'Bitter', Serif
+    font-size: 18px
+    color: #666666
+
+  .circled
+    background-color: #2DCA6F
+    border-radius: 120px
+    height: 150px
+    width: 150px
+    display: table
+    margin: 5vh 45% !important
+
+  .i-center
+    display: table
+    margin: 50% auto
+    font-size: 36px
+    color: white
+    transition: ease-in-out .1s
+
+
+  .btn-return
+    display: table
+    margin: 5vh auto
+    background-color: #2DCA6F
+    color: white
+    font-family: 'Bitter', Serif
+    font-size: 24px
+    overflow: hidden
+    height: 20px
+
+  .lift
+    padding-bottom: 5%
+    transition: ease-in-out .1s
+
+  .lift:hover > .btn-return
+    margin-top: 1vh
+    margin-bottom: 2vh !important
+    box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22)
+    transition: ease-in-out .1s
+
+
+  .btn-i
+    font-size: 20px
+    margin-left: 0
+    opacity: 0
+    transition: ease-in-out .1s
+
+  .btn-return:hover > .btn-i
+    margin-left: 10px
+    opacity: 1
+
+  @media screen and (max-width: 480px)
+    .circled
+      display: table
+      margin: 5vh auto !important
+
+    .btn-i
+      display: none
+
+    .btn-return
+      font-size: 18px
+
+  @media screen and (max-width: 320px)
+    .container
+      margin-top: 2vh

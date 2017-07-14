@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Exodus">
+    <meta name="keywords" content="Outdoor Fun">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SIRFIC ADMIN</title>
+    <link rel="apple-touch-icon" href="">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/dropzone.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- custom google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- end font -->
+</head>
+<body>
+<section class="profile-page grey-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 left_col">
+
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="agregar-usario.html" class="site_title">Backend SIRFIC</a>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Bienvenido,</span>
+                            <h2>Lord Plantillas</h2>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3 class="spaced-top">General</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Indice <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="agregar-usario.html">Dashboard</a></li>
+                                        <li><a href="perfil.html">Perfil</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-clipboard"></i> Catalogo <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Vista General</a></li>
+                                        <li><a href="#">Agregar Producto</a></li>
+                                        <li><a href="#">Editar Productos</a></li>
+                                        <li><a href="#">Eliminar Productos</a></li>
+                                        <li><a href="#">Promociones</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-eye"></i> Simulador <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Pre-Vista</a></li>
+                                        <li><a href="#">Modificar Colores</a></li>
+                                        <li><a href="#">Editar Vista</a></li>
+                                        <li><a href="#">Subir Imagenes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-cog"></i> Otro <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="agregar-usario.html">Agregar Usaurios</a></li>
+                                        <li><a href="edicion-de-info.html"> Editar Ligas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Opcciones">
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Vista Completa">
+                            <i class="fa fa-arrows-alt"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Subir Archivos" href="upload.html">
+                            <span class="fa fa-upload" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Cerrar">
+                            <span class="fa fa-power-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-1 grey-bg">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Subir archivos al base de datos</h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Settings 1</a>
+                                        </li>
+                                        <li><a href="#">Settings 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                            <p>Arrastra y suelta los archivos que quieras subir aqui. </p>
+                            <form action="form_upload.html" class="dropzone"></form>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /page content -->
+            </div>
+
+        </div>
+    </div>
+</section>
+            <script src="./scripts/jquery-3.2.1.min.js"></script>
+            <script src="./scripts/jquery.waypoints.min.js"></script>
+            <script src="./scripts/tether.min.js"></script>
+            <script src="./scripts/bootstrap.min.js"></script>
+            <script src="./scripts/dropzone.min.js"></script>
+            <script src="./scripts/main.js"></script>
+</body>
+</html>

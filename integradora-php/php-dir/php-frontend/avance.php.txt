@@ -1,0 +1,46 @@
+<?
+
+  $link = mysqli_connect("localhost", "root", "", "sirfic");
+
+  if($link === false){
+      die("ERROR: No Se encuentra la base de datos " . mysqli_connect_error());
+  }
+
+  $sql = "INSERT INTO ARTICULOS (PRODUCTOS,IMAGENES,DESCRIPCION,PRESENTACION,NUMERO,CATEGORIA,OTRO) VALUES ('$li_PRODUCTOS, $li_IMAGENES, $li_DESCRIPCION, $li_PRESENTACION, $li_NUMERO, $li_CATEGORIA, $li_OTRO')";
+  if(mysqli_query($link, $sql)){
+      echo "Datos guardados y acualizados con exitos.";
+  } else{
+      echo "ERROR: No se pudo ejecutar su actualizacion, intente mas tarde $sql. " . mysqli_error($link);
+  }
+mysqli_close($link);
+
+
+
+function productos_sql(){
+
+  $query1 = "SELECT PRODUCTOS FROM ARTICULOS";
+  $query2 = "SELECT IMAGENES FROM ARTICULOS";
+  $query3 = "SELECT descripcion FROM ARTICULOS";
+
+  $numpro = 3; //numero de PRODTUs que se rotarán
+  $random = rand(1,$numpro); //numero aleatorio en un arreglo, (variable numbanners define el tamaño del arreglo)
+  $img = array();//arreglo de imagenes
+  $ubi = array();//arreglo de posiciones para sellecionar el redireccionamiento
+  $txt = array();//texto perteneciente a la descripcion de cada articulo
+
+  $img[1] = mysqli_query($query2); //imagen almacenada
+  $ubi[1] = mysqli_query($query1);//direccioanemito del producto
+  $txt[1] = mysqli_query($query3);//descriciopn del Production
+
+  $img[2] = mysqli_query($query2); //imagen almacenada
+  $ubi[2] = mysqli_query($query1);//direccioanemito del producto
+  $txt[2] = mysqli_query($query3);//descriciopn del Production
+
+  $img[1] = mysqli_query($query2); //imagen almacenada
+  $ubi[1] = mysqli_query($query1);//direccioanemito del producto
+  $txt[1] = mysqli_query($query3);//descriciopn del Production
+
+
+echo "<a href='$ubi[$random]' target='_blank'><img src='$img[$random]' alt='$txt[random]' border='0'></a>"; //Genera una nueva pagina en con la descripcion del articulo y la imagen (Seecion catalogo)
+}
+?>

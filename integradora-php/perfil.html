@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Exodus">
+    <meta name="keywords" content="Outdoor Fun">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SIRFIC ADMIN</title>
+    <link rel="apple-touch-icon" href="">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- custom google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- end font -->
+    </head>
+<body>
+<section class="profile-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 left_col">
+
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="#" class="site_title">Backend SIRFIC</a>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Bienvenido,</span>
+                            <h2>Sr. Carlos Martinez</h2>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3 class="spaced-top">General</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Indice <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="agregar-usario.html">Perfil</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-clipboard"></i> Catalogo <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Vista General</a></li>
+                                        <li><a href="#">Agregar Producto</a></li>
+                                        <li><a href="#">Editar Productos</a></li>
+                                        <li><a href="#">Eliminar Productos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-eye"></i> Simulador <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Pre-Vista</a></li>
+                                        <li><a href="#">Modificar Colores</a></li>
+                                        <li><a href="#">Editar Vista</a></li>
+                                        <li><a href="#">Subir Imagenes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-cog"></i> Otro <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="agregar-usario.html">Agregar Usaurios</a></li>
+                                        <li><a href="edicion-de-info.html">Editar Ligas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Opcciones">
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Vista Completa">
+                            <i class="fa fa-arrows-alt"></i>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Subir Archivos" href="upload.html">
+                            <span class="fa fa-upload" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Cerrar">
+                            <span class="fa fa-power-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 col-sm-offset-1">
+                <div class="clearfix">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Tu Perfil </h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Cambiar Contraseña</a>
+                                            </li>
+                                            <li><a href="#">Cambiar Imagen de Perfil</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <br />
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombres <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellidos <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> Posicion</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Sexo</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div id="gender" class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                    <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
+                                                </label>
+                                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                    <input type="radio" name="gender" value="female"> Female
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha de nacimiento <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="ln_solid"></div>
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                            <button class="btn btn-danger" type="button">Cancelar</button>
+                                            <button class="btn btn-primary" type="reset">Borrar</button>
+                                            <button type="submit" class="btn btn-success">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<script src="./scripts/jquery-3.2.1.min.js"></script>
+<script src="./scripts/jquery.waypoints.min.js"></script>
+<script src="./scripts/tether.min.js"></script>
+<script src="./scripts/bootstrap.min.js"></script>
+<script src="./scripts/validator/validator.js"></script>
+<script src="scripts/parsley.js"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
